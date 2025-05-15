@@ -1,19 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '../components/Layout';
 
 const AboutPage: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setSubscribed(true);
-      alert('Thank you for subscribing to our newsletter!');
-      setEmail('');
-    }
-  };
-
   return (
     <Layout>
       <div className="min-h-screen bg-white">
@@ -237,44 +225,6 @@ const AboutPage: React.FC = () => {
                   Olivia leads our talent acquisition and development, fostering a culture of growth, diversity, and inclusion.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Newsletter Subscription Section */}
-        <section className="py-16 md:py-24 bg-gray-50">
-          <div className="container mx-auto px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Stay Connected</h2>
-              <p className="text-lg text-gray-700 mb-10">
-                Subscribe to our newsletter to receive the latest updates, industry insights, and exclusive content from Devantics.
-              </p>
-              <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-gray-800"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 !rounded-button whitespace-nowrap cursor-pointer"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-                <p className="mt-4 text-sm text-gray-600">
-                  We respect your privacy and will never share your information.
-                </p>
-              </form>
-              {subscribed && (
-                <div className="mt-6 p-4 bg-green-100 text-green-800 rounded-lg">
-                  Thank you for subscribing to our newsletter!
-                </div>
-              )}
             </div>
           </div>
         </section>

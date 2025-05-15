@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
             <Link to="/services" className="font-semibold text-gray-900 hover:text-blue-500 transition-colors text-md">Services</Link>
             <Link to="/about" className="font-semibold text-gray-900 hover:text-blue-500 transition-colors text-md">About Us</Link>
             <Link to="/portfolio" className="font-semibold text-gray-900 hover:text-blue-500 transition-colors text-md">Portfolio</Link>
-            <a href="#" className="font-semibold text-gray-900 hover:text-blue-500 transition-colors text-md">Blog</a>
+            <Link to="/blog" className="font-semibold text-gray-900 hover:text-blue-500 transition-colors text-md">Blog</Link>
             <Link to="/contact" className="font-semibold text-gray-900 hover:text-blue-500 transition-colors text-md">Contact</Link>
             {/* SearchBar component */}
             <div className="relative">
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
           <Link to="/services" className="block py-3 px-2 text-gray-900 font-semibold hover:text-blue-500" onClick={() => setMenuOpen(false)}>Services</Link>
           <Link to="/about" className="block py-3 px-2 text-gray-900 font-semibold hover:text-blue-500" onClick={() => setMenuOpen(false)}>About Us</Link>
           <Link to="/portfolio" className="block py-3 px-2 text-gray-900 font-semibold hover:text-blue-500" onClick={() => setMenuOpen(false)}>Portfolio</Link>
-          <a href="#" className="block py-3 px-2 text-gray-900 font-semibold hover:text-blue-500" onClick={() => setMenuOpen(false)}>Blog</a>
+          <Link to="/blog" className="block py-3 px-2 text-gray-900 font-semibold hover:text-blue-500" onClick={() => setMenuOpen(false)}>Blog</Link>
           <Link to="/contact" className="block py-3 px-2 text-gray-900 font-semibold hover:text-blue-500" onClick={() => setMenuOpen(false)}>Contact</Link>
           <div className="mt-4">
             <SearchBar />

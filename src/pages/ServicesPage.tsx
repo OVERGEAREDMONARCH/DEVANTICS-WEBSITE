@@ -812,14 +812,14 @@ const ServicesPage: React.FC = () => {
                       <input
                         type="text"
                         placeholder="Full Name"
-                        className="w-full px-4 py-3 rounded-lg focus:outline-none border-none"
+                        className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none border-none"
                       />
                     </div>
                     <div>
                       <input
                         type="email"
                         placeholder="Email Address"
-                        className="w-full px-4 py-3 rounded-lg focus:outline-none border-none"
+                        className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none border-none"
                       />
                     </div>
                   </div>
@@ -827,11 +827,11 @@ const ServicesPage: React.FC = () => {
                     <input
                       type="text"
                       placeholder="Company"
-                      className="w-full px-4 py-3 rounded-lg focus:outline-none border-none"
+                      className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none border-none"
                     />
                   </div>
                   <div>
-                    <select className="w-full px-4 py-3 rounded-lg focus:outline-none border-none appearance-none bg-white text-gray-500">
+                    <select className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none border-none appearance-none">
                       <option value="">Select Service</option>
                       <option value="web">Web Development</option>
                       <option value="mobile">Mobile App Development</option>
@@ -845,7 +845,7 @@ const ServicesPage: React.FC = () => {
                     <textarea
                       placeholder="Project Details"
                       rows={4}
-                      className="w-full px-4 py-3 rounded-lg focus:outline-none border-none"
+                      className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none border-none"
                     ></textarea>
                   </div>
                   <div>
